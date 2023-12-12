@@ -1,0 +1,41 @@
+/* App.css */
+.fields-linker {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.list-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+.link-item {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 4px;
+  cursor: move;
+}
+
+.link-item.dragging {
+  opacity: 0.5;
+}
+
+.links-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}

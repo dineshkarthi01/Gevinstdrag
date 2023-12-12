@@ -1,0 +1,57 @@
+/* FieldLinkers.css (or your stylesheet) */
+
+.match-column-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.draggable {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.draggable.clicked {
+  background-color: #ddd;
+}
+
+.draggable.matched {
+  background-color: #8aff8a; /* Green for matched pairs */
+}
+
+.draggable.not-matched {
+  background-color: #ff8a8a; /* Red for mismatched pairs */
+}
+
+.lines {
+  position: relative;
+  height: 30px;
+}
+
+.line {
+  stroke-width: 2;
+  stroke: #ccc;
+  transition: stroke 0.3s ease;
+}
+
+.line.matched {
+  stroke: #8aff8a; /* Green for matched lines */
+}
+
+.line.mismatched {
+  stroke: #ff8a8a; /* Red for mismatched lines */
+}
